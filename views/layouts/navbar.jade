@@ -1,0 +1,35 @@
+div.navbar.navbar-default.navbar-fixed-top
+  div.container
+    div.navbar-header
+      a.navbar-brand(href='/')
+        img.navbar-logo(src='/media/logo-symbol-32x32.png')
+        span.navbar-brand-label #{projectName}
+      button.navbar-toggle.collapsed(data-toggle='collapse', data-target='.my-navbar-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    div.navbar-collapse.my-navbar-collapse.collapse
+      form.navbar-form.navbar-left(role='search')
+        .form-group
+          input.form-control(type='text')
+          |  
+          button.btn.btn-default(type='submit') Search
+      ul.nav.navbar-nav
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Browse
+            strong.caret
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+  
+
+       ul.nav.navbar-nav.navbar-right
+        ul.nav.navbar-nav
+            li: a(href='/contact/') Contact us 
+        if user && user.username
+          li: a(href='#{user.defaultReturnUrl}')
+            i.fa.fa-user
+            |  #{user.username}
+        else
+          li: a(href='/login/')
+            i.fa.fa-user
+            |  Sign In

@@ -1,0 +1,60 @@
+extends ../layouts/default
+
+block head
+  title #{projectName}
+
+block neck
+  link(href='/views/new/index.css', rel='stylesheet')
+
+block body
+  section(style='background: #ffffff;')
+    .container
+      .row
+        .col-sm-12
+          h2(style='text-align: center; padding-bottom: 4%;') How to start a startup?
+    .container#timeline
+      .row
+        .col-lg-12
+          ul.timeline
+            li
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/9.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 教育訓練
+                .timeline-body
+                  p.text-muted
+                    | 參觀公司／台灣的創業
+            li.timeline-inverted
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/monkey.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 夜市
+                .timeline-body
+                  p.text-muted
+                    | 文化／特色小吃／北部
+            li
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/timeline-3.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 台南
+                .timeline-body
+                  p.text-muted
+                    | 文化／歷史／古績／老咖啡
+            li.timeline-inverted
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/timeline-4.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 客家文化
+                .timeline-body
+                  p.text-muted
+                    | 
+            li.timeline-inverted
+              .timeline-image
+                h4
+                  | Join the
+                  br
+                  | Adventure!

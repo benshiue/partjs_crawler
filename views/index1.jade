@@ -1,0 +1,129 @@
+extends layouts/default
+
+block fb_meta
+  meta(property='og:site_name', content='PartJS')
+  meta(property='og:title', content='Full Stack Boilerplates')
+  meta(property='og:url', content='#{currentURL("")}')
+  meta(property='og:image', content='')
+  meta(property='article:published_time', content='')
+  
+block head
+  title #{projectName}
+
+block neck
+  link(rel='stylesheet', href='/views/index.min.css?#{cacheBreaker}')
+
+block body
+  section#landing
+    img.background-attach(src='/images/gallery/monkey.jpg')
+    .row
+      .col-md-8
+        div.pull-right(style='background: #fcfcfc; padding: 30px 90px 60px 30px; opacity: 0.8; filter: alpha(opacity=80); margin-top: -300px;')
+          h1(style='font-size:58px;') Cool play
+            h4 Travel is part of education for the young while travel is part of experience for the old.
+            h5 對青年人來說，旅行是教育的一部分
+            h5 對老年人來說，旅行是閱歷的一部分
+            h5        by 培根 Francis Bacon-
+
+
+   section
+    .container
+    p
+      h3 酷玩點燈直播
+
+    .container
+    .row
+        .col-sm-6.col-md-offset-2.col-md-4(class='[ ]')
+          .info-card(class='[ ]')
+            img(style='width: 100%', src='/images/gallery/monkey.jpg')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .info-card-details.animate(class='[ ]')
+              .info-card-header(class='[ ]')
+                h1  酷玩點燈直撥
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h3  
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .info-card-detail(class='[ ]')
+                // Description
+                p
+                  | The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .social
+                  a.social-icon.facebook.animate(href='https://www.facebook.com/rem.mcintosh', class='[ ]')
+                    span.fa.fa-facebook
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a.social-icon.twitter.animate(href='https://twitter.com/Mouse0270', class='[ ]')
+                    span.fa.fa-twitter
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a.social-icon.github.animate(href='https://github.com/mouse0270', class='[ ]')
+                    span.fa.fa-github-alt
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a.social-icon.google-plus.animate(href='https://plus.google.com/u/0/115077481218689845626/posts', class='[ ]')
+                    span.fa.fa-google-plus
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  a.social-icon.linkedin.animate(href='www.linkedin.com/in/remcintosh/', class='[ ]')
+                    span.fa.fa-linkedin
+                  |     &#x9;&#x9;
+        .col-sm-6.col-md-4(class='[ ]')
+          .info-card(class='[ ]')
+            img(style='width: 100%', src='http://api.randomuser.me/portraits/women/45.jpg')
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            .info-card-details.animate(class='[ ]')
+              .info-card-header(class='[ ]')
+                h1  Caroline Samantha Henderson 
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h3  aka not a real person 
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .info-card-detail(class='[ ]')
+                // Description
+                p
+                  | People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is realizing that you are the beholder. This empowers us to find beauty in places where others have not dared to look including inside ourselves.
+  
+
+      ul.list-unstyled.video-list-thumbs.row
+        li.col-lg-3.col-sm-4.col-xs-6
+        
+
+        li.col-lg-3.col-sm-4.col-xs-6
+          a(href='#online', title='Claudio Bravo, antes su debut con el Barça en la Liga')
+            img.img-responsive(src='/images/gallery/9.jpg', alt='Barca', height='130px')
+            h2 Jollen 帶你去看猴子泡溫泉
+            span.glyphicon.glyphicon-play-circle
+            span.duration 03:15
+
+      
+
+
+  section#online
+ 
+    .container
+      .row
+        .col-md-8
+          
+          h1 
+        .col-md-8
+          
+          h1
+            | 旅遊同步看
+
+            
+      .row
+        
+        .col-md-8
+          
+          h1
+            | travel online show
+            
+          div
+            iframe(src='//www.youtube.com/embed/W4hfgriEjOk', width='630', height='354')
+          
+          hr
+
+  
+        
+       
+
+
+
+          
+    

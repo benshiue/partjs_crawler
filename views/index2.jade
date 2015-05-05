@@ -1,0 +1,118 @@
+extends layouts/default
+
+block fb_meta
+  meta(property='og:site_name', content='PartJS')
+  meta(property='og:title', content='Full Stack Boilerplates')
+  meta(property='og:url', content='#{currentURL("")}')
+  meta(property='og:image', content='')
+  meta(property='article:published_time', content='')
+  
+block head
+  title #{projectName}
+
+block neck
+  link(rel='stylesheet', href='/views/index.min.css?#{cacheBreaker}')
+
+block feet
+  script(src='/elements/build/bundle.js')
+
+block body
+  section#landing
+    img.background-attach(src='/images/gallery/camera-keys .jpg')
+    .row
+      .col-md-8
+        div.pull-right(style='background: #fcfcfc; padding: 30px 90px 60px 30px; opacity: 0.8; filter: alpha(opacity=80); margin-top: -450px;')
+          h3(style='font-size:58px;') Cool play
+            h5 Travel is part of education for the young while travel is part of experience for the old.
+            h5 對青年人來說，旅行是教育的一部分
+            h5 對老年人來說，旅行是閱歷的一部分
+            h5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by 培根 Francis Bacon-
+
+
+   section
+    .container
+    p
+      h3 酷玩直播
+      #placeholder-div
+
+    
+   section
+    .container(style='margin-top: 20px; margin-bottom: 20px;')
+      .row
+        .col-md-4#news
+
+   script(type='text/template', id='tmpl-news')
+     a.text-center.btn-spot-news(href='*')
+      img.img-responsive(style='margin:0;', src='http://lorempixel.com/800/533/71')
+      .info
+        h5 日本
+        h5 猴子泡溫泉實境show
+
+    
+  .container
+    .row
+        h2 Carousel Reviews
+    .carousel-reviews.broun-block
+      .container
+        .row
+          #carousel-reviews.carousel.slide(data-ride='carousel')
+            .carousel-inner
+              .item.active
+                .col-md-3.col-sm-6
+                  iframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show
+                .col-md-3.col-sm-6.hidden-xs
+                  iframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show
+                .col-md-3.col-sm-6.hidden-sm.hidden-xs
+                  iframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show
+                .col-md-3.col-sm-6.hidden-sm.hidden-xs
+                  iiframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show
+              |                     
+              .item
+                .col-md-3.col-sm-6
+                  iframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show
+                .col-md-3.col-sm-6.hidden-xs
+                  iframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show
+                .col-md-3.col-sm-6.hidden-sm.hidden-xs
+                  .iframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show
+                 .col-md-3.col-sm-6.hidden-sm.hidden-xs
+                  .iframe(width='250', height='200', src='//www.youtube.com/embed/I3v4n_78AT0', allowfullscreen='')
+                  .info
+                  h5 日本
+                  h5 猴子泡溫泉實境show 
+              
+            |                 
+            a.left.carousel-control(href='#carousel-reviews', role='button', data-slide='prev')
+              
+            |                 
+            a.right.carousel-control(href='#carousel-reviews', role='button', data-slide='next')
+              
+
+
+        
+       
+
+
+
+          
+    

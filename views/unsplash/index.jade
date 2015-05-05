@@ -1,0 +1,38 @@
+extends ./layout/default
+
+block fb_meta
+  meta(property='og:site_name', content='PartJS')
+  meta(property='og:title', content='Full Stack Boilerplates')
+  meta(property='og:url', content='#{currentURL("")}')
+  meta(property='og:image', content='')
+  meta(property='article:published_time', content='')
+  
+block head
+  title #{projectName}
+
+block neck
+  //- Common
+  link(href='#{cdnServer}/vendor/fullpage/jquery.fullPage.css', rel='stylesheet')
+
+  //- App
+  link(href='#{cdnServer}/views/unsplash/examples.css', rel='stylesheet')
+
+block feet
+  //- Common
+  script(src='#{cdnServer}/vendor/jquery/dist/jquery.min.js')
+  script(src='#{cdnServer}/vendor/jqueryui/jquery-ui.min.js')
+  script(src='#{cdnServer}/vendor/fullpage/jquery.fullPage.min.js')
+  script(src='#{cdnServer}/vendor/screenfull/dist/screenfull.min.js')
+
+  //- App
+  script(src='#{cdnServer}/views/unsplash/examples.js')
+
+block heading
+
+block body
+  div#section-background-fixed-bgvid
+    iframe(src='//www.youtube.com/embed/YIKr2EMkm48?autoplay=1&controls=0&loop=1&showinfo=0&modestbranding=1&disablekb=1&enablejsapi=1', frameborder='0', allowfullscreen)
+    .block-2
+      h1 Coffee for Life
+    //video(autoplay, loop)
+    //  source(src='http://video.webmfiles.org/big-buck-bunny_trailer.webm', type='video/webm')

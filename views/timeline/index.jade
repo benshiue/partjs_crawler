@@ -1,0 +1,97 @@
+extends ../layouts/default
+
+block head
+  title #{projectName}
+
+block neck
+  link(href='/views/timeline/index.css', rel='stylesheet')
+
+block body
+  section(style='background: #ffffff;')
+    .container
+      .row
+        .col-sm-12
+          h2(style='text-align: center; padding-bottom: 4%;') How to start a startup?
+    .container#timeline
+      .row 
+        h1 美麗寶島－台灣
+      .row
+        .col-lg-12
+          ul.timeline
+            li
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/1.jpeg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 1月－3月
+                .timeline-body
+                  p.text-muted
+                    h5 過年－平溪天燈/鹽水蜂炮/台東炸寒單/苗栗炸龍/台北燈節
+                    h5 1月中旬至2月底  梨花
+                    h5 1-2月油菜花(花蓮)、波斯菊(宜蘭員山深溝社區、娜路彎前、美濃、南州糖廠)
+                    h5 1-3月 櫻花  (陽明山國家公園、阿里山風景區及烏來風景區，霧社廬山地區、東勢林場、觀霧、棲蘭山)
+                    h5 1-5月草莓(大湖、國姓)、梅花(陽明山)2月15日瑪雅斯比 
+                    h5 2-4月黑尾鷗(基隆港區)
+                    h5 3月20前後 灰面鷲(八卦山)
+                    h5 3月杜鵑 (陽明山烏山頭水庫烏來、中橫公路梨山、合歡山沿線)
+            li.timeline-inverted
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/5.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 4月-6月
+                .img.img-responsive
+                  p.text-muted
+                    h5 4月布洛灣百合花季／翻車魚季
+                    h5 月中旬至5月中旬 油桐花(新竹大山背地區、東勢林場、苗栗南庄)
+                    h5 4-6月黑鮪魚季(東港)/油桐花開、螢火蟲季/文山包種茶(坪林、深坑)/水蜜桃、李子(紅肉李、桃接李)
+                    h5 4-8月野百合(東北角、基隆嶼)
+                    h5 4-9月天人菊
+                    h5 4-10月賞鯨豚(東北角沿海、花東)、泛舟(秀姑巒溪)
+                    h5 5月油桐花(4-6月西湖渡假村、三義、東勢林場、八卦山、土城承天禪寺、新竹台三線)
+                    h5 5月 五結鄉鴨母節
+                    h5 5-7月東方美人茶(北埔峨眉)
+                    h5 5-7月水蜜桃(巴陵山區拉拉山)、日本甜柿(巴陵山區拉拉山)
+                    h5 5-8月海芋
+                    h5 5-10月青斑蝶(大屯山)、蓮花(觀音鄉、白河)「北觀音、南白河」、茉莉花(彰化花壇)、向日葵
+                    h5 6-8月葡萄
+                    h5 6-9月三灣梨
+            li
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/7.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 7月－9月
+                .timeline-body
+                  p.text-muted
+                    h5 7月 秀姑巒溪國際泛舟賽／賞鯨季/原住民文化節／馬太鞍蓮花季/冬山鄉風箏節 蘇澳冷泉嘉年華 
+                    h5 月水梨、童玩藝術節、宜蘭童玩節/馬太鞍溼地生態季
+                    h5 7~9月　高接梨、合歡山高山野花/中秋前後桂花香 (南投名間)、南島文化節(台東)、三義木雕藝術節八月十九日到二十七日... 
+                    h5 9月日月潭花火節、柚子、文朱柑(新品種橘子)
+                    h5 9-10月 糖梨
+                    h5 9-11月波斯菊(武陵農場、梨山)、芒草                |
+            li.timeline-inverted
+              .timeline-image
+                img.img-circle.img-responsive(src='/images/gallery/timeline-4.jpg', alt='')
+              .timeline-panel
+                .timeline-heading
+                  h4 10月－12月
+                .timeline-body
+                  p.text-muted
+                    h5 10月 三年ㄧ科東港燒王船、恆春觀起鷹落鷹、玉蘭茶香節
+                    h5 10-12月柿餅(北埔新埔)
+                    h5 10-2月 雁鴨(雁鴨公園、關渡自然公園)
+                    h5 10-3月 曾文溪口賞黑面琵鷺(七股、龍鑾潭)
+                    h5 11月洛神花(台東金峰)、鄒族生命豆祭、南方澳鯖魚節/杭白菊(苗栗銅鑼)/太魯閣馬拉松邀請賽/關西仙草節
+                    h5 11~1月中旬　橘子、日本柑橙
+                    h5 合歡山雪季／縱谷聖誕燈會、矮靈祭(五峰)
+                    h5 12-1月 風櫃斗賞梅季：每年聖誕節過後，一直到一月中旬為最佳賞花季節。(南投風櫃斗、阿里山、武陵農場、東勢林場)三星蔥蒜節、楓樹槭樹(石門水庫楓林步道)、桃、李花開
+                    h5 油菜花、櫻花(陽明山、烏來、奧萬大)
+                    h5 12-3月 桶柑
+                    h5 12~4月 草莓
+            li.timeline-inverted
+              .timeline-image
+                h4
+                  | Cool Play
+                  br
+                  | go!go!go!
